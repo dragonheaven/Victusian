@@ -1,0 +1,71 @@
+.filediv {
+    display: inline;
+    padding-left:0px !important;
+}
+
+#avatardiv {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed #00af8e;
+    padding: 4px;
+}
+
+.img-avatar-preview {
+    width: 100%;
+    height: 100%;
+}
+
+#file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+}
+.img-preview {
+    display: inline-block;   
+    width:100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 4px;
+    border: 1px dashed #00af8e;     
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+
+.block {
+    border-bottom: 2px dashed #ddd;
+    font-weight: 900;
+}
+
+.legion-avatar {
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 25%;
+}
+
+.m-bordered:hover {
+    cursor: pointer;
+    background: rgb(197, 244, 248);
+}
