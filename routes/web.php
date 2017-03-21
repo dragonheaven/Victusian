@@ -200,3 +200,9 @@ Route::post('/checkPaymentRegister', 'PurchaseController@checkPaymentRegister');
 Route::get('/testWebCam', function() {
     return view('testWebCam');
 });
+
+//-----------  Leaderboard --------------------------//
+
+Route::get('/leaderboard', function () {
+   return view('leaderboard/leaderboard')->with('page', 'leaderboard');
+});

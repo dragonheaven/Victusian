@@ -1,7 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19f6fb79-35b7-45ff-a0c2-b276be05c200" name="Default" comment="" />
+    <list default="true" id="19f6fb79-35b7-45ff-a0c2-b276be05c200" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/leaderboard/leaderboard.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/43.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/48.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/49.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/51.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/52.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/53.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/54.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/56.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/57.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/58.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/59.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/61.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/62.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/63.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/65.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/66.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/67.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/68.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/69.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/71.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/72.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/73.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/76.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/77.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/78.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/79.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/81.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/82.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/83.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/84.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/85.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/86.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/87.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/89.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/91.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/92.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/93.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/94.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/95.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/96.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/97.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/98.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/1200x900/99.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/400x300/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/400x300/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/010.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/011.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/012.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/013.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/014.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/015.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/016.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/017.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/08-long.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/101.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/102.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/43.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/48.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/49.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/51.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/52.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/53.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/54.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/56.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/57.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/58.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/59.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/61.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/62.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/63.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/65.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/66.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/67.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/68.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/69.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/71.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/72.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/73.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/76.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/77.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/78.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/79.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/81.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/82.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/83.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/84.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/85.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/86.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/87.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/89.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/91.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/92.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/93.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/94.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/95.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/96.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/97.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/98.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dash_assets/global/img/portfolio/600x600/99.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/victusian.iml" afterPath="$PROJECT_DIR$/.idea/victusian.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,28 +252,71 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="2014_10_12_100000_create_password_resets_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="leaderboard.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/leaderboard/leaderboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="608">
+              <caret line="267" column="33" lean-forward="false" selection-start-line="267" selection-start-column="33" selection-end-line="267" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <file leaf-file-name="dashboard_2.html" pinned="false" current-in-tab="false">
+        <entry file="file:///Volumes/Data/From Left/MyVideo/dashboard/metronic/template/metronic_v4.5.1/theme/admin_2/dashboard_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-945">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="447">
+              <caret line="1822" column="34" lean-forward="false" selection-start-line="1711" selection-start-column="28" selection-end-line="1822" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="206" column="71" lean-forward="false" selection-start-line="206" selection-start-column="71" selection-end-line="206" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="159" column="136" lean-forward="false" selection-start-line="159" selection-start-column="136" selection-end-line="159" selection-end-column="136" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>member</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/leaderboard/leaderboard.blade.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
@@ -51,6 +332,7 @@
     <option name="width" value="1920" />
     <option name="height" value="978" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -66,8 +348,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -77,6 +357,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="victusian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="victusian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="victusian" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -122,7 +416,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaderboard" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -136,38 +438,86 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="victusian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="victusian" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factories" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -179,36 +529,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490010599681</updated>
-      <workItem from="1490010603410" duration="126000" />
+      <workItem from="1490010603410" duration="2774000" />
+      <workItem from="1490128692319" duration="4872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126000" />
+    <option name="totallyTimeSpent" value="7646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="978" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.4978701" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22121896" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.81842387" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22121896" sideWeight="0.49361023" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24653888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,16 +569,35 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_13_070520_add_verification_to_user_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_13_070520_add_verification_to_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -234,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -242,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -250,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -258,6 +626,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -270,10 +645,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="593">
+          <caret line="206" column="71" lean-forward="false" selection-start-line="206" selection-start-column="71" selection-end-line="206" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="159" column="136" lean-forward="false" selection-start-line="159" selection-start-column="136" selection-end-line="159" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data/From Left/MyVideo/dashboard/metronic/template/metronic_v4.5.1/theme/admin_2/dashboard_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="1822" column="34" lean-forward="false" selection-start-line="1711" selection-start-column="28" selection-end-line="1822" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/leaderboard/leaderboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="267" column="33" lean-forward="false" selection-start-line="267" selection-start-column="33" selection-end-line="267" selection-end-column="33" />
           <folding />
         </state>
       </provider>

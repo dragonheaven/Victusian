@@ -341,40 +341,38 @@ Home
             </section>
             <!-- section end -->
            
-                
             <!-- section start -->
-            <section class="section light-gray-bg pv-30 padding-bottom-clear clearfix" style="background: url('/images/pattern/pattern_2.png') repeat 50% 0; background-size: 8px 8px">
-                <div class="container">
+            <!-- ================ -->
+            <section class="section default-bg clearfix padding-ver-clear">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 padding-bottom-clear pv-30">
                             <div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-                                <span class="icon without-bg"><i class="fa text-default fa-heart-o"></i></span>
+                                <span class="icon without-bg"><i class="fa fa-heart-o"></i></span>
                                 <div class="body">
-                                    <h4 class="title">Love &amp; Happiness, Compassion</h4>
-                                    <p class="text-muted">Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem dolor consectetur.</p>
-                                    <a href="{{url('/about/legion')}}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+                                    <h3 class="title">Love &amp; Happiness, Compassion</h3>
+                                    <p>Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem dolor consectetur.</p>
+                                    <a class="link-dark" href="{{url('/about/legion')}}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-4 padding-bottom-clear pv-30 dark-translucent-bg">
                             <div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-                                <span class="icon without-bg"><i class="fa text-default fa-connectdevelop"></i></span>
+                                <span class="icon without-bg"><i class="fa fa-balance-scale"></i></span>
                                 <div class="body">
-                                    <h4 class="title">Balance, Focus, Intelligence</h4>
-                                    <p class="text-muted">Iure sequi unde hic. Sapiente quaerat sequi inventore veritatis cumque lorem ipsum dolor sit amet, consectetur.</p>
-                                    <a href="{{url('/about/legion')}}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+                                    <h3 class="title">Balance, Focus, Intelligence</h3>
+                                    <p>Iure sequi unde hic. Sapiente quaerat sequi inventore veritatis cumque lorem ipsum dolor sit amet, consectetur.</p>
+                                    <a class="link-dark" href="{{url('/about/legion')}}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-4 padding-bottom-clear pv-30">
                             <div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-                                <span class="icon without-bg"><i class="fa text-default icon-snow"></i></span>
+                                <span class="icon without-bg"><i class="fa fa-rocket"></i></span>
                                 <div class="body">
-                                    <h4 class="title">Making Winners</h4>
-                                    <p class="text-muted">Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet, consectetur.</p>
-                                    <a href="{{url('/about/legion')}}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+                                    <h3 class="title">Making Winners</h3>
+                                    <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet, consectetur.</p>
+                                    <a class="link-dark" href="{{url('/about/legion')}}">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -382,8 +380,8 @@ Home
                 </div>
             </section>
             <!-- section end -->
-
-            
+                
+                       
 
             <!-- section start -->
             <section class="section clearfix" style="background-color: #eef3ea;">
@@ -414,7 +412,7 @@ Home
                         <div class="col-sm-6 col-md-3">
                             <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
                                 <div class="overlay-container">
-                                    <img src="/images/portfolio1.jpg" alt="">
+                                    <img src="/images/economy.jpg" alt="">
                                     <div class="overlay-to-top">
                                         <p class="small margin-clear"><em>Get free from Stress<br> Lorem ipsum dolor sit</em></p>
                                     </div>
@@ -452,7 +450,7 @@ Home
                         <div class="col-sm-6 col-md-3">
                             <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
                                 <div class="overlay-container">
-                                    <img src="/images/portfolio1.jpg" alt="">
+                                    <img src="/images/film.jpg" alt="">
                                     <div class="overlay-to-top">
                                         <p class="small margin-clear"><em>Get Film <br> Lorem ipsum dolor sit</em></p>
                                     </div>
