@@ -79,6 +79,19 @@ $(function () {
             reader.readAsDataURL(this.files[0]);            
         }
     });
+
+    //Preview Certification
+    $('body').on('change', '#file-cert', function() {
+         if (this.files && this.files[0]) {
+             //validation
+             var ext = $(this).val().split('.').pop().toLowerCase();
+             if($.inArray(ext, ['pdf', 'docx', 'doc']) == -1) {
+                 alert("Invalid Document Format");
+                 return;
+             }
+             $('#cert-label').text(this.files[0].name);
+         }
+    });
     
     //When mouse clicks a legion box, remember its id.
     $('.m-heading-1').on('click', function() {

@@ -65,9 +65,5 @@ return [
         'redirect'      => env('GITHUB_URL'),
     ],
 
-    'stripe' => [
-        'model'  => App\User::class,
-        'secret' => env('STRIPE_SECRET'),
-        'key'    => env('STRIPE_KEY'),
-    ],
+
 ];

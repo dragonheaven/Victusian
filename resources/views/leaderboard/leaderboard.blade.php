@@ -71,7 +71,7 @@
                             </thead>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar1.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team1.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Brain</a>
                                 </td>
@@ -84,7 +84,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar2.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team2.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Nick</a>
                                 </td>
@@ -97,7 +97,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar3.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team3.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tim</a>
                                 </td>
@@ -110,7 +110,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar4.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team4.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tom</a>
                                 </td>
@@ -123,7 +123,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar5.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team5.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Nick</a>
                                 </td>
@@ -136,7 +136,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar6.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team6.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tim</a>
                                 </td>
@@ -149,7 +149,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar7.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team7.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tom</a>
                                 </td>
@@ -163,7 +163,7 @@
 
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar2.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team8.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Nick</a>
                                 </td>
@@ -176,7 +176,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar3.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team9.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tim</a>
                                 </td>
@@ -189,7 +189,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar4.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team10.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tom</a>
                                 </td>
@@ -202,7 +202,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar5.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team11.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Nick</a>
                                 </td>
@@ -215,7 +215,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar6.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team12.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tim</a>
                                 </td>
@@ -229,7 +229,7 @@
 
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar4.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team13.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tom</a>
                                 </td>
@@ -242,7 +242,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar5.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team14.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Nick</a>
                                 </td>
@@ -255,7 +255,7 @@
                             </tr>
                             <tr>
                                 <td class="fit">
-                                    <img class="user-pic rounded" src="/images/avatar/avatar6.jpg"> </td>
+                                    <img class="user-pic rounded" src="/images/avatar/team15.jpg"> </td>
                                 <td>
                                     <a href="javascript:;" class="primary-link">Tim</a>
                                 </td>

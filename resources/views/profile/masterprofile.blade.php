@@ -337,6 +337,20 @@ My Profile
                                                         <input name="file[]" type="file" id="file"/>
                                                     </div>                                                                              
                                                 </div>
+
+                                                <h3 class="block">Upload your certification</h3>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <div class="fileUpload btn btn-primary">
+                                                            <span><i class="fa fa-plus"></i>Add Certification</span>
+                                                            <input type="file" name="file-cert" id="file-cert" class="upload" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label id="cert-label"></label>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                             <div class="tab-pane" id="tab3">
                                                 <h3 class="block">Choose your local legion</h3>

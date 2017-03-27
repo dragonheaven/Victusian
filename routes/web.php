@@ -206,3 +206,14 @@ Route::get('/testWebCam', function() {
 Route::get('/leaderboard', function () {
    return view('leaderboard/leaderboard')->with('page', 'leaderboard');
 });
+
+//----------- soulcation -------------------------//
+
+Route::get('/soulcation', function() {
+    return view('workshops/travel')->with('page', 'soulcation');
+});
+
+//----------- Become a Legion -----------//
+Route::get('/legiontest', function () {
+    return view('bealegion')->with('page', 'becomelegion');
+});

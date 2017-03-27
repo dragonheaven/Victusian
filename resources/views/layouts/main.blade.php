@@ -162,7 +162,7 @@
 
 											<!-- submenu start -->
 											<li class="dropdown">
-												<a href="" class="dropdown-toggle" data-toggle="dropdown">Soulcation & Fun</a>
+												<a href="{{url('/soulcation')}}" class="dropdown-toggle" data-toggle="dropdown">Soulcation & Fun</a>
 												<ul class="dropdown-menu">
 													<li><a href="">Recreational trip</a></li>
 													<li><a href="">Sport trip</a></li>
@@ -193,6 +193,12 @@
 												</ul>
 											</li>
 											@endif
+											@if(Auth::check() && session('userrole') == 3)
+											<li>
+												<a href="{{url('/legiontest')}}">Be a Legion</a>
+											</li>
+											@endif
+
 											@if(Auth::check() && session('userrole') == 2)
 											<li><a href="{{url('/oversee')}}">Oversee</a></li>											
 											@endif

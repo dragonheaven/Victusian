@@ -24,6 +24,22 @@ class AccountController extends Controller
     	return view('account/logout')->with('page', 'account_logout');
     }
 
+    public function certUpload() {
+        if(array_key_exists('file-cert', $_FILES) && $_FILES['file-cert']['error'] == 0 )
+        {
+            $cert = $_FILES['file-cert'];
+            $target_file = "uploads/certificate/".time();
+            if(move_uploaded_file($cert['tmp_name'], $target_file))
+            {
+                return $target_file;
+            } else {
+                return NULL;
+            }
+        } else {
+            return NULL;
+        }
+    }
+
     public function avatarUpload() {
         if (array_key_exists('file_avatar', $_FILES) && $_FILES['file_avatar']['error'] == 0 ) {
             $image = $_FILES['file_avatar'];
@@ -112,6 +128,7 @@ class AccountController extends Controller
         $data = $request->all();
 
         $portfolio_url_id = NULL;
+        $cert_path = NULL;
 
         //avatar_file_upload
         if(isset($data['file_avatar']))
@@ -122,6 +139,12 @@ class AccountController extends Controller
                                   ->update(['image_url' => $path]);   
                 Session::put('userImageURL', $path);
             }
+        }
+
+        //certification upload
+        if(isset($data['file-cert']))
+        {
+            $cert_path = $this->certUpload();
         }
 
         //multiple_portfolio_image_upload
@@ -166,6 +189,7 @@ class AccountController extends Controller
             'currency' => $data['currency'],
             'teachsince' => $data['teachsince'],
             'portfolioid' => $portfolio_url_id,
+            'certificate_url' => $cert_path,
             'motto' => $data['motto'],
             'aboutme' => $data['aboutme'],
         ])){            

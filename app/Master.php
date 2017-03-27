@@ -13,6 +13,6 @@ class Master extends Model
     protected $fillable = [
         'userid', 'legionid', 'firstname', 'lastname', 'gender', 'dateofbirth', 'phonenum', 'address',
         'city', 'country', 'postalcode', 'teachsince', 'currency', 'teachcategory', 'portfolioid',
-        'motto', 'aboutme',
+        'motto', 'aboutme', 'certificate_url',
     ];
 }
