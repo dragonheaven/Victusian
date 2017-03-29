@@ -56,6 +56,30 @@ Calendar
                 }
             });
 	    });
+
+	    $('#checkinbtn').on('click', function () {
+            $('#event_id').val($('#checkinbtn').attr('data-id'));
+        });
+
+        $('#event_checkin_btn').on('click', function() {
+            var id = $('#event_id').val();
+            $('#confirmModal2').modal("hide");
+            $.ajax({
+                url: '/checkEvent',
+                type: 'POST',
+                data: {
+                    _token: "{{ csrf_token()}}",
+                    id: id,
+                },
+                dataType: "text",
+                success: function(data) {
+					if(data == "success")
+					{
+					    console.log("ok");
+					}
+                }
+            });
+        });
 	});
 </script>
 @endpush
@@ -73,6 +97,13 @@ Calendar
 	    border-radius: 10px !important;
 	}
 
+	.eventbox {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 30px;
+		border: 1px solid #eee;
+	}
+
 </style>
 @section('content')
 <div class="container">
@@ -87,6 +118,31 @@ Calendar
 				<div id='calendar'></div>
 			</div>
 		</div>
+
+	</div>
+</div>
+
+<div class="container">
+	<div class="main-container">
+				<div class="eventbox">
+					@if(count($events) > 0)
+						@foreach($events as $event)
+							<div class="row">
+							<div class="col-md-8">
+								<h3>{{$event->title}}</h3>
+								<p>{{$event->description}}</p>
+								<h5>{{$event->startdate}} - {{$event->expiredate}}</h5>
+							</div>
+							<div class="col-md-4">
+								<a class="btn btn-success" id="checkinbtn" data-toggle="modal" data-target="#confirmModal2" data-id="{{$event->eventid}}" data-id2="{{$event->userid}}" style="position: absolute; right: 0px">Check In</a>
+							</div>
+							</div>
+						@endforeach
+					@else
+					<h4>There's no events you joined. Please take more activities on Victus</h4>
+					@endif
+				</div>
+
 	</div>
 </div>
 
@@ -99,12 +155,12 @@ Calendar
 				<h4 class="modal-title" id="myModalLabel"><i class="fa fa-ticket"></i>&nbsp  Victus Calendar</h4>
 			</div>
 			<div class="modal-body">
-				<h4 id="event_title"></h4>									
+				<h4 id="event_title"></h4>
 				<h5> When</h5>
 				<input type="hidden" name="event_id" id="event_id" value="">
 				<p class="margin-clear" id="event_range"><i class="fa fa-calendar">&nbsp</i></p>
 			</div>
-			
+
 			<div class="modal-footer">
 				<button class="btn btn-sm btn-default" data-dismiss="modal">OK</button>
 				<button class="btn btn-sm btn-success drop-ok" id="event_cancel_btn">Cancel this event</button>
@@ -113,4 +169,30 @@ Calendar
 	</div>
 </div>
 <!--End Confirmation Modal -->
+
+<!--Drop confirmation Modal 2-->
+<div class="modal fade" id="confirmModal2" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="myModalLabel"><i class="fa fa-ticket"></i>&nbsp  Victus Network</h4>
+			</div>
+			<div class="modal-body">
+				<h4 id="event_title"></h4>
+				<h5> Have you really attended this event? </h5>
+				<input type="hidden" name="event_id" id="event_id" value="">
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-sm btn-default" data-dismiss="modal">No</button>
+				<button class="btn btn-sm btn-success drop-ok" id="event_checkin_btn">CheckIn</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--End Confirmation Modal 2-->
+
+
+
 @endsection

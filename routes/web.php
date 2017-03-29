@@ -178,13 +178,14 @@ Route::get('/approve/{num}/{nmode}',[
 Route::get('/socialauth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('/socialauth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
-//----------- Calendar View ----------------------------//
-Route::get('/calendar', function() {
-    return view('calendar.calendar')->with('page','calendar');
-});
+//----------- Calendar View ----------------------------
+
+Route::get('/calendar', 'WorkshopsController@showCalender');
+
 
 Route::get('/getEventDataXML', 'WorkshopsController@getEventDataXML');  //fetch event for calendar
 Route::post('/cancelEvent', 'WorkshopsController@cancelEvent');  //cancel event from calendar
+Route::post('/checkEvent', 'WorkshopsController@checkEvent');    //checkin event after attended the event
 
 
 //----------- Main Controller ------------------------//

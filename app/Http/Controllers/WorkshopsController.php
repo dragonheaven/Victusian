@@ -11,7 +11,6 @@ use Auth;
 use App\Event\Event;
 use DateTime;
 use DateTimeZone;
-use Laracast\Flash;
 
 class WorkshopsController extends Controller
 {
@@ -427,6 +426,37 @@ class WorkshopsController extends Controller
         echo json_encode($output_arrays);
     }
 
+    public function showCalender()
+    {
+        $userid = Session::get('userid');
+        $events = DB::table('event')
+            ->join('events_users', 'event.id', 'events_users.eventid')
+            ->where('userid', $userid)
+            ->where('events_users.state', '0')
+            ->select('eventid', 'title', 'description', 'startdate', 'expiredate', 'type', 'userid')
+            ->get();
+        return view('calendar/calendar', [
+            'events' => $events,
+        ])->with('page', 'calendar');
+
+    }
+
+    public function checkEvent()
+    {
+        $eventid = $_POST['id'];
+
+        // set 'state' as '1' in 'events_users' table
+        DB::table('events_users')->where('eventid', $eventid)
+            ->update(['events_users.state' => 1]);
+
+        //Calculate Credit for user
+        
+
+
+        $this->showCalender();
+        return "success";
+    }
+
     public function cancelEvent(Request $request) 
     {
         DB::table('events_users')->where([
@@ -438,4 +468,6 @@ class WorkshopsController extends Controller
         return "success";
         
     }
+
+
 }

@@ -33,7 +33,7 @@ class MainController extends Controller
     public function getfeed2()
     {
     	$events = DB::table('event')
-    	->join('masters', 'event.createdby', '=', 'masters.userid');
+    	->join('masters', 'event.createdby', '=', 'masters.userid')
     	->where('state', '0')
     	->where('masters.legionid', Session::get('userid'))
     	->select('masters.*')
