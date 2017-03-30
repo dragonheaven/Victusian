@@ -453,8 +453,8 @@ class WorkshopsController extends Controller
         
 
 
-        $this->showCalender();
-        return "success";
+        return $this->showCalender();
+        //return "success";
     }
 
     public function cancelEvent(Request $request) 

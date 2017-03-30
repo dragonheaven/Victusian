@@ -30,6 +30,7 @@ class CreateMastersTable extends Migration
             $table->integer('currency');
             $table->string('teachcategory');
             $table->integer('portfolioid');
+            $table->string('certificate_url');
             $table->string('motto', 255);
             $table->string('aboutme', 255);
             $table->timestamps();

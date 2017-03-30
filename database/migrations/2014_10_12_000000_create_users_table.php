@@ -19,8 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->nullable();
             $table->string('password')->nullable();
+            $table->integer('credits')->default(0);
+            $table->integer('rank')->default(0);
             $table->string('provider')->nullable();
             $table->string('provider_id', 255)->nullable();
+            $table->string('stripe_customer_id')->nullable();
             $table->integer('actived')->nullable();
             $table->string('image_url')->nullable();
             $table->rememberToken();
