@@ -152,6 +152,22 @@ class EventController extends Controller
         return "fail";
     }
 
+    public function showJoinedStudents($num)
+    {
+        $event = DB::table('events_users')
+            ->join('event', 'events_users.eventid', '=', 'event.id')
+            ->where('event.id', '=', $num)
+            ->first();
+        $attendees = DB::table('events_users')
+            ->join('users', 'events_users.userid', '=', 'users.id')
+            ->where('events_users.eventid', $num)
+            ->select('users.*', 'events_users.state')
+            ->get();
 
+        return view('event/mystudents', [
+            'event' => $event,
+            'attendees' => $attendees,
+        ])->with('page', 'mystudents');
+    }
     
 }

@@ -75,8 +75,8 @@ Calendar
                 success: function(data) {
 					if(data == "success")
 					{
-					    console.log("ok");
-					}
+                        window.location.reload();
+                    }
                 }
             });
         });
@@ -100,14 +100,22 @@ Calendar
 	.eventbox {
 		max-width: 900px;
 		margin: 0 auto;
+		margin-top: 40px;
 		padding: 30px;
 		border: 1px solid #eee;
+		box-shadow: 0 0 10px 0px black;
 	}
 
 </style>
 @section('content')
 <div class="container">
 	<div class="main-container">
+		@if(Session::has('message'))
+			<div class="alert alert-{{ Session::get('status') }} status-box">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				{{ Session::get('message') }}
+			</div>
+		@endif
 		<div class="row">
 			<div class="col-md-12" style="text-align: center">
 				<h2><strong>Event Schedule you joined</strong></h2>
@@ -124,24 +132,34 @@ Calendar
 
 <div class="container">
 	<div class="main-container">
-				<div class="eventbox">
-					@if(count($events) > 0)
-						@foreach($events as $event)
-							<div class="row">
-							<div class="col-md-8">
-								<h3>{{$event->title}}</h3>
-								<p>{{$event->description}}</p>
-								<h5>{{$event->startdate}} - {{$event->expiredate}}</h5>
-							</div>
-							<div class="col-md-4">
-								<a class="btn btn-success" id="checkinbtn" data-toggle="modal" data-target="#confirmModal2" data-id="{{$event->eventid}}" data-id2="{{$event->userid}}" style="position: absolute; right: 0px">Check In</a>
-							</div>
-							</div>
-						@endforeach
-					@else
-					<h4>There's no events you joined. Please take more activities on Victus</h4>
-					@endif
+
+		@if(count($events) > 0)
+			@foreach($events as $event)
+			<div class="space-top eventbox">
+				<div class="row">
+					<div class="col-md-2">
+						<div style="text-align: center; padding:10px">
+							<span style="font-size: 50px; color: #4b4be0; ">MAR</span>
+							<br>
+							<span style="font-size: 40px">30</span>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3>{{$event->title}}</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolore fugit vitae quia dicta inventore reiciendis. Ipsa, aut voluptas quaerat.{{$event->description}}</p>
+						<h5>{{$event->startdate}} - {{$event->expiredate}}</h5>
+					</div>
+					<div class="col-md-2">
+						<a class="btn btn-success" id="checkinbtn" data-toggle="modal" data-target="#confirmModal2" data-id="{{$event->eventid}}" data-id2="{{$event->userid}}" style="position: absolute; right: 0px"><i class="fa fa-check"></i>Check In</a>
+					</div>
 				</div>
+			</div>
+			@endforeach
+		@else
+		    <div class="eventbox">
+				<h4>There's no events you joined. Please take more activities on Victus</h4>
+			</div>
+		@endif
 
 	</div>
 </div>

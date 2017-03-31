@@ -9,6 +9,8 @@ use Validator;
 use Session;
 use App\User;
 use Auth;
+use Illuminate\Support\Facades\Redirect;
+
 
 use Cartalyst\Stripe\Stripe;
 
@@ -25,6 +27,11 @@ class PurchaseController extends Controller
     	$customer = \Stripe\Customer::create(array(
 		  "source" => $token,
 		));
+
+        //save customer_id into table Users
+        DB::table('users')
+            ->where('id', Session::get('userid'))
+            ->update(['stripe_customer_id' => $customer->id]);
 		return $customer; 	
     }
 
@@ -33,31 +40,66 @@ class PurchaseController extends Controller
     	$token = $_POST['stripeToken'];
     	$email = $_POST['stripeEmail'];
 
-    	$customer = User::where('id', Session::get('userid'))->value('stripe_customer_id');
-    	if(!$customer)
-    		$customer = $this->paymentRegister($token);
-		
+    	$customer = NULL;
+    	$customerid = User::where('id', Session::get('userid'))->value('stripe_customer_id');
+    	if(!$customerid)
+        {
+            $customer = $this->paymentRegister($token);
+            $customerid = $customer->id;
+        }
 
-
-		// Charge the Customer instead of the card:
-		$charge = \Stripe\Charge::create(array(
-		  "amount" => 1000,
-		  "currency" => "usd",
-		  "customer" => $customer->id
-		));
 
 		// YOUR CODE: Save the customer ID and other info in a database for later.
+        $event_id = $_POST['event_id'];
+        $price = DB::table('event')
+            ->where('event.id', $event_id)
+            ->value('price');
 
-		// YOUR CODE (LATER): When it's time to charge the customer again, retrieve the customer ID.
-		$charge = \Stripe\Charge::create(array(
-		  "amount" => 1500, // $15.00 this time
-		  "currency" => "usd",
-		  "customer" => $customer_id
-		));
+        DB::table('events_users')
+            ->insert([
+                'eventid' => $event_id,
+                'userid' => Session::get('userid'),
+                'state' => 0,
+            ]);
+
+        // Charge the Customer instead of the card:
+        $charge = \Stripe\Charge::create(array(
+            "amount" => $price,
+            "currency" => "usd",
+            "customer" => $customerid
+        ));
+
+        return Redirect::back()->with('status', 'success')->with('message', 'You successfully joined to this event');
+
+    }
+
+    public function eventOrder2(Request $request)
+    {
 
 
-		echo $customer;
-		exit();
+        $customerid = User::where('id', Session::get('userid'))->value('stripe_customer_id');
+
+        // YOUR CODE: Save the customer ID and other info in a database for later.
+        $event_id = $_POST['event_id'];
+        $price = DB::table('event')
+            ->where('event.id', $event_id)
+            ->value('price');
+
+        DB::table('events_users')
+            ->insert([
+                'eventid' => $event_id,
+                'userid' => Session::get('userid'),
+                'state' => 0,
+            ]);
+
+        // Charge the Customer instead of the card:
+        $charge = \Stripe\Charge::create(array(
+            "amount" => $price,
+            "currency" => "usd",
+            "customer" => $customerid
+        ));
+
+        return Redirect::back()->with('status', 'success')->with('message', 'You successfully joined to this event');
 
     }
 

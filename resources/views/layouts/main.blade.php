@@ -203,16 +203,7 @@
 											<li><a href="{{url('/oversee')}}">Oversee</a></li>											
 											@endif
 											<!-- submenu end -->
-											@if(Auth::check())
-											<li>
-												<a class="dropdown-toggle" data-toggle="dropdown" style="color: #09afdf"><i class="fa fa-bell-o"></i><span class="badge badge-default"></span></a>
-												<ul class="dropdown-menu dropdown-menu-right dropdown-animation cart" style="text-align: center; padding 5px">
-													<li class="notify-item">
-														<p class="notify-text"></p>
-													</li>
-												</ul>
-											</li>
-											@endif
+
 											<li>
 												@if (Auth::check())
 												<a class="dropdown-toggle" data-toggle="dropdown">
@@ -461,61 +452,6 @@
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="/js/custom.js"></script>
 
-		<script type="text/javascript">
-			if(Auth::check())
-			{
-				if({{session('userrole')}} > 2)
-				{
-					setInterval(function(){
-						$.ajax({
-							url: '/getfeed',
-			                type: 'POST',
-			                data: {
-			                        _token: "{{ csrf_token()}}",
-			                    },
-			                dataType: "text",
-			                success: function(data) {
-			                	var res = JSON.parse(data);
-			                	if(res.length == 0)
-			                	{
-			                		$('.notify-text').text('No upcoming event');
-			                	}	
-			                	
-			                    for (var idx = 0; idx < res.length; idx++) {
-			                    	$('.cart').html('<li><p>You reserved a sit on '+ res[idx].title +'</p></li>');
-
-			                    }
-			                    if(res.length != 0) $('.badge').text(res.length);
-			                }
-						});
-					},3600);
-				}
-				else if({{session('userrole')}} == 2)
-				{
-					setInterval(function() {
-						$.ajax({
-							url: '/getfeed2',
-			                type: 'POST',
-			                data: {
-			                        _token: "{{ csrf_token()}}",
-			                    },
-			                dataType: "text",
-			                success: function(data) {
-			                	var res = JSON.parse(data);
-			                	if(res.length == 0)
-			                	{
-			                		$('.notify-text').text('No new events');
-			                	}
-			                	for (var idx = 0; idx < res.length; idx++) {
-			                    	$('.cart').html('<li><p>Master '+ res[idx].firstname +'Created new event</p></li>');
-
-			                    }
-			                    if(res.length != 0) $('.badge').text(res.length);
-			                }
-						});
-					}, 2000);
-				}
-			}
-		</script>
+		
 	</body>
 </html>

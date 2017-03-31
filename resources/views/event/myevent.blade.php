@@ -81,7 +81,7 @@ My Events
 								@else
 								<img src="/images/event1.jpg" alt="">
 								@endif
-								<a class="overlay-link" href="javascript:;"><i class="fa fa-plus"></i></a>
+								<a class="overlay-link" href="{!! route('mystudents', ['num' => $event->id]) !!}"><i class="fa fa-plus"></i></a>
 								<!-- <span class="badge">TopRated</span> -->
 							</div>
 							<p class="pl-10">								
@@ -91,10 +91,9 @@ My Events
 								@for($i = 0;$i < (7-$event->rate);$i ++)
 								<i class="fa fa-star-o"></i>
 								@endfor	
-								<br>				
-								{{$event->reviewed}} &nbsp Reviewed	
+
 								<br>
-								{{$event->visited}} &nbsp Joined	
+								<a href="{!! route('mystudents', ['num' => $event->id]) !!}" target="_blank">{{$event->visited}} &nbsp Joined</a>
 							</p>
 							<span class="pl-10">
 								
@@ -231,6 +230,10 @@ My Events
                 else alert('Operation failed because of some issues...');
               }
         });
+    }
+
+    function evnetdetail() {
+	    var id = $
     }
 </script>
 

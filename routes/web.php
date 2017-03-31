@@ -62,6 +62,8 @@ Route::get('/eventdetail/{num}',[
     'as' => 'eventdetail'
     ]);
 
+
+
 Route::get('/filterLocation/{nCate}/{nLoc}',[
     'uses' => 'WorkshopsController@filterLocation',
     'as' => 'filterLocation'
@@ -72,7 +74,7 @@ Route::get('/filterMaster/{nCate}/{nId}',[
     'as' => 'filterMaster'
     ]);
 
-Route::post('/joinevent', 'WorkshopsController@joinEvent');
+//Route::post('/joinevent', 'WorkshopsController@joinEvent');
 
 
 Route::group(['prefix' => 'account'], function() {
@@ -165,6 +167,16 @@ Route::group(['prefix' => 'event'], function() {
 
     Route::post('dropEvent', 'EventController@dropEvent');
 });
+
+Route::get('/mystudents', function () {
+    return view('event/mystudents')->with('page', 'mystudents');
+});
+
+Route::get('/mystudents/{num}',[
+    'uses' => 'EventController@showJoinedStudents',
+    'as' => 'mystudents'
+]);
+
 Route::get('/oversee', 'WorkshopsController@overSee');
 
 Route::post('/addVenue', 'WorkshopsController@addVenue');
@@ -196,6 +208,7 @@ Route::get('/stripe', 'AccountController@createStripeAccount');
 
 //----------- Purchase Controller -------------------//
 Route::post('/eventOrder', 'PurchaseController@eventOrder');
+Route::post('/eventOrder2', 'PurchaseController@eventOrder2');
 Route::post('/checkPaymentRegister', 'PurchaseController@checkPaymentRegister');
 
 Route::get('/testWebCam', function() {
@@ -218,3 +231,4 @@ Route::get('/soulcation', function() {
 Route::get('/legiontest', function () {
     return view('bealegion')->with('page', 'becomelegion');
 });
+

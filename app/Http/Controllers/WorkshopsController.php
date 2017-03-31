@@ -11,6 +11,7 @@ use Auth;
 use App\Event\Event;
 use DateTime;
 use DateTimeZone;
+use Illuminate\Http\RedirectResponse;
 
 class WorkshopsController extends Controller
 {
@@ -296,12 +297,12 @@ class WorkshopsController extends Controller
         {
             return redirect('/auth/login');
         }
-        
+
 
         $eventid = $_POST['eventid'];
         $userid = Session::get('userid');
 
-        //register joining information                                                                                     
+        //register joining information
         try {
             DB::table('events_users')->insert([
                 'eventid' => $eventid,
@@ -404,6 +405,7 @@ class WorkshopsController extends Controller
         $input_arrays = DB::table('event')
         ->join('events_users', 'event.id', 'events_users.eventid')
         ->where('userid', Session::get('userid'))
+        ->where('events_users.state', 0)
         ->select('eventid', 'title', 'startdate', 'expiredate', 'type')->get();
 
 
@@ -443,18 +445,62 @@ class WorkshopsController extends Controller
 
     public function checkEvent()
     {
+        $credit_table = array(
+            array(19, 23, 27),
+            array(-1, 25, 31),
+            array(-1, 29, 35),
+            array(-1, 33, 39),
+            array(-1, -1, 45),
+        );
+
+        $credit_table_coaching = array(
+            67,
+            99,
+            121,
+            153,
+            191,
+        );
+
         $eventid = $_POST['id'];
 
         // set 'state' as '1' in 'events_users' table
-        DB::table('events_users')->where('eventid', $eventid)
+        DB::table('events_users')
+            ->where([['eventid', '=', $eventid], ['userid', '=', Session::get('userid')]])
             ->update(['events_users.state' => 1]);
 
         //Calculate Credit for user
-        
+        $attendee = DB::table('users')
+            ->where('id', Session::get('userid'))
+            ->first();
+        $event = DB::table('event')
+            ->where('id', $eventid)
+            ->first();
 
+        $current_rank = $attendee->rank;
+        $current_credits = $attendee->credits;
+        $event_level = $event->level_required;
+        $event_category = $event->category;
 
-        return $this->showCalender();
-        //return "success";
+        $delta_credit = 0;
+        //coaching
+        if($event_category == '1')
+        {
+            $delta_credit = $credit_table_coaching[$current_rank];
+        }else {
+            $delta_credit = $credit_table['$current_rank']['$event_level'];
+        }
+
+        //sum up credit
+        $current_credits = $current_credits + $delta_credit;
+
+        //update database
+        DB::table('users')
+            ->where('id', Session::get('userid'))
+            ->update(['credits' => $current_credits]);
+
+        Session::put('status', 'success');
+        Session::put('message', 'Your have earned '.$current_credits.' credits');
+        return "success";
     }
 
     public function cancelEvent(Request $request) 

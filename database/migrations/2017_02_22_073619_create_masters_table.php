@@ -16,6 +16,7 @@ class CreateMastersTable extends Migration
         Schema::create('masters', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('userid');
+            $table->foreign('userid')->references('id')->on('users')->onDelete('cascade');
             $table->integer('legionid');
             $table->string('firstname');
             $table->string('lastname');

@@ -16,6 +16,7 @@ class CreateLegionsTable extends Migration
         Schema::create('legions', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('userid');
+            $table->foreign('userid')->references('id')->on('users')->onDelete('cascade');
             $table->string('firstname');
             $table->string('lastname');
             $table->integer('gender');

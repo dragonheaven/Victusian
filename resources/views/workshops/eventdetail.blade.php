@@ -88,11 +88,11 @@ Event Details
 						<hr class="mb-10">
 
 						@if($event->level_required == 0)
-						<strong>Level Required: Beginner</strong>							
+						<strong>Beginner Level</strong>
 						@elseif($event->level_required == 1)
-						<strong>Level Required: Medium</strong>
+						<strong>Medium Level</strong>
 						@elseif($event->level_required == 2)
-						<strong>Level Required: Advanced</strong>
+						<strong>Advanced Level</strong>
 						@endif
 
 						<hr class="mb-10">
@@ -101,7 +101,11 @@ Event Details
 						<div class="light-gray-bg p-20 bordered clearfix">
 							<span class="product price"><i class="icon-tag pr-10"></i> ‎€ {{$event->price}}</span>
 							<div class="product elements-list pull-right clearfix">
+								@if($event->createdby != session('userid'))
 								<button onclick="checkPaymentRegister()" value="Join" class="margin-clear btn btn-default btn-animated">Join<i class="fa fa-ticket"></i></button>
+								@else
+								<h5>You created this event</h5>
+								@endif
 							</div>
 						</div>
 						@else
@@ -161,11 +165,11 @@ Event Details
 							</div>
 							
 							<div class="modal-footer">
-								<form action="{{url('/joinevent')}}" method="POST" style="margin:0px;">
+								<form action="{{url('/eventOrder2')}}" method="POST" style="margin:0px;">
 								{{ csrf_field() }}
 								<button type="button" class="btn btn-sm btn-dark" data-dismiss="modal">Cancel</button>
 								
-								<input type="hidden" name="eventid" value="{{$event->id}}">
+								<input type="hidden" name="event_id" value="{{$event->id}}">
 								<button type="submit" class="btn btn-sm btn-default drop-ok">Buy Ticket</button>
 								</form>
 							</div>
@@ -174,41 +178,7 @@ Event Details
 				</div>
 				<!--End Confirmation Modal -->
 
-				<div class="modal fade" id="confirmModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-								<h4 class="modal-title" id="myModalLabel"><i class="fa fa-ticket"></i>&nbsp;  Victus Network</h4>
-							</div>
-							<div class="modal-body">										
-								<div class="row">
-									<div class="col-sm-12">
-										<h4><i class="fa fa-warning">&nbsp;</i>You have not set payment</h4>
-										<p>Please set payment to continue activities.</p>
-									</div>									
-								</div>
-							</div>
-							
-							<div class="modal-footer">
-								<form action="{{url('/eventOrder')}}" method="POST" style="margin:0px auto;">
-								{{ csrf_field() }}
-									<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-									<script
-										src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-										data-key="pk_test_Nlf6T59gFZyCPKTJSPo19Msx"
-										data-name="Victusian"
-										data-amount="{{$event->price*100}}"
-										data-description="Join Event"
-										data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-										data-locale="auto">
-									</script>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--End Confirmation Modal -->
+
 
 				<div class="separator-2"></div>
 
@@ -224,7 +194,6 @@ Event Details
 								<img src="/images/avatar.png" alt="">
 								<a href="/images/avatar.png" class="popup-img overlay-link" title="{{$event->name}} - Legion"><i class="icon-plus-1"></i></a>
 								@endif
-
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-10 col-lg-10">
@@ -384,7 +353,18 @@ Event Details
 								</div>
 								<div class="media-body">
 									<h6 class="media-heading">{{$user->name}}</h6>								
-									<p class="price">Intermediate Level</p>
+									<p class="price"></p>
+									@if($user->rank == 0)
+										<p class="price">Red Member</p>
+									@elseif($user->rank == 1)
+									    <p class="price">Indigo Blue Member</p>
+									@elseif($user->rank == 2)
+										<p class="price">Golden Pillar Member</p>
+									@elseif($user->rank == 3)
+										<p class="price">Star Light Member</p>
+									@elseif($user->rank == 4)
+										<p class="price">Master of Duality</p>
+									@endif
 								</div>
 								<hr>
 							</div>
@@ -402,9 +382,54 @@ Event Details
 			</aside>
 		</div>
 	</div>
+
+	<div class="modal fade" id="confirmModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel2"><i class="fa fa-ticket"></i>&nbsp;  Victus Network</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4><i class="fa fa-warning">&nbsp;</i>You have not set payment</h4>
+							<p>Please set payment to continue activities.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<form action="{{url('/eventOrder')}}" method="POST" style="margin:0px auto;">
+						{{ csrf_field() }}
+						<input type="hidden" name="event_id" value="{{$event->id}}"
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<script
+								src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+								data-key="pk_test_Nlf6T59gFZyCPKTJSPo19Msx"
+								data-name="Victusian"
+								data-amount="{{$event->price*100}}"
+								data-description="Join Event"
+								data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+								data-locale="auto">
+						</script>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End Confirmation Modal -->
 </div>
 
 <script src="https://js.stripe.com/v3/"></script>
+
+<script src="/dash_assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="/dash_assets/global/scripts/app.min.js" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="/dash_assets/pages/scripts/ui-modals.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	function checkPaymentRegister() {
 		$.ajax({
@@ -417,11 +442,13 @@ Event Details
             success: function(data) {
             	if(data == "yes")
             	{
-            		$('#confirmModal').modal();
+                    $('#confirmModal2').remove();
+            		$('#confirmModal').modal('show');
             	}
             	else 
             	{
-            		$('#confirmModal2').modal();
+                    $('#confirmModal').remove();
+                    $('#confirmModal2').modal('show');
             	}
             }
 		});
