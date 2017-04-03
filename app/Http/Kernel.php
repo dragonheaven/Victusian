@@ -36,6 +36,10 @@ class Kernel extends HttpKernel
             'throttle:60,1',
             'bindings',
         ],
+
+        'emailverify' => [
+            \App\Http\Middleware\EmailVerified::class
+        ]
     ];
 
     /**

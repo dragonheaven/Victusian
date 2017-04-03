@@ -84,6 +84,35 @@ class LoginController extends Controller
 
     public function handleProviderCallback($provider)
     {
+        //catch callback errors such as user_cancelled_login or denied error
+
+        //linkedin error when user cancel login with linkedin
+        if (isset($_GET['error']) && $_GET['error'] == 'user_cancelled_login') {
+
+            return redirect()->to('/auth/login')
+                ->with('status', 'danger')
+                ->with('message', 'You did not share your profile data with our VictusNetwork.');
+
+        }
+
+        //twitter error when user cancel login with twitter
+        if (isset($_GET['error']) && $_GET['error'] == 'access_denied') {
+
+            return redirect()->to('/auth/login')
+                ->with('status', 'danger')
+                ->with('message', 'Access denied, to share your profile data with our VictusNetwork.');
+
+        }
+
+        //facebook error when user cancel login with facebook
+        if (isset($_GET['denied'])) {
+
+            return redirect()->to('/auth/login')
+                ->with('status', 'danger')
+                ->with('message', 'You did not share your profile data with our Victusnetwork.');
+
+        }
+
         $user = Socialite::driver($provider)->user();
 
         $authUser = $this->findOrCreateUser($user, $provider);

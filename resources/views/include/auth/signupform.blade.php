@@ -3,7 +3,7 @@
 <!-- BEGIN REGISTRATION FORM -->
 
 <form class="register-form" action="{{ url('/auth/register') }}" method="post">
-{{ csrf_field() }}
+    {{ csrf_field() }}
     <h3>Sign Up</h3>
     <div class="row">
         <div class="col-md-6">
@@ -12,7 +12,7 @@
                 <label class="control-label visible-ie8 visible-ie9">Name</label>
                 <div class="input-icon{{ $errors->has('name') ? ' has-error' : '' }}">
                     <i class="fa fa-user"></i>
-                    <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Name" name="name" value="{{ old('name') }}" required/>
+                    <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Name" name="name" value="{{ old('name') }}"/>
                 </div>
                 @if ($errors->has('name'))
                     <span class="help-block">
@@ -25,7 +25,7 @@
                 <label class="control-label visible-ie8 visible-ie9">Email</label>
                 <div class="input-icon{{ $errors->has('email') ? ' has-error' : '' }}">
                     <i class="fa fa-envelope"></i>
-                    <input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email" value="{{ old('email') }}" required/>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email" value="{{ old('email') }}"/>
                 </div>
                 @if ($errors->has('email'))
                     <span class="help-block">
@@ -37,7 +37,7 @@
                 <label class="control-label visible-ie8 visible-ie9">Password</label>
                 <div class="input-icon{{ $errors->has('password') ? ' has-error' : '' }}">
                     <i class="fa fa-lock"></i>
-                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password" value="{{ old('password') }}" required/>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password" value="{{ old('password') }}"/>
                 </div>
                 @if ($errors->has('password'))
                     <span class="help-block">
@@ -50,7 +50,7 @@
                 <div class="controls">
                     <div class="input-icon{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
                         <i class="fa fa-check"></i>
-                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="password_confirmation" required/>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="password_confirmation"/>
                     </div>
                     @if ($errors->has('password_confirmation'))
                         <span class="help-block">

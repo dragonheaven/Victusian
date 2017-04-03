@@ -257,59 +257,6 @@
 			</div>
 			<!-- header-container end -->
 
-			<!-- login modal start -->
-			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-							<h4 class="modal-title" id="loginModalLabel">Login</h4>
-						</div>
-
-						<div class="modal-body">
-							<form class="form-horizontal">
-								<div class="form-group has-feedback">
-									<label for="name" class="col-sm-3 control-label">User Name</label>
-									<div class="col-sm-8">
-										<input type="text" class="form-control" id="name" name="name" placeholder="User Name" required>
-										<i class="fa fa-user form-control-feedback"></i>
-									</div>
-								</div>
-
-								<div class="form-group has-feedback">
-									<label for="password" class="col-sm-3 control-label">Password</label>
-									<div class="col-sm-8">
-										<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-										<i class="fa fa-lock form-control-feedback"></i>
-									</div>
-								</div>
-
-								<div class="form-group login-area">
-									<div class="col-sm-offset-3 col-sm-8">
-										<div class="checkbox">
-											<label><input type="checkbox" name="remember"> Remember me</label>
-										</div>											
-										<span class="forget-password"><a >Forgot your password?</a></span>
-										<button type="submit" class="btn btn-group btn-default btn-animated">Log In <i class="fa fa-user"></i></button>
-									</div>
-								</div>
-
-								<div class="form-group social-login-area">
-									<div class="col-sm-offset-3 col-sm-8">
-										<span class="text-center text-muted">Login with</span>
-										<ul class="social-links colored circle clearfix">
-											<li class="facebook"><a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-											<li class="twitter"><a target="_blank" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-											<li class="googleplus"><a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- login modal end -->
 		
 			@yield('content')
             

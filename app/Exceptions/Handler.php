@@ -44,13 +44,9 @@ class Handler extends ExceptionHandler
      * @return \Illuminate\Http\Response
      */
 
-    public function render($request, Exception $e)
+    public function render($request, Exception $exception)
     {
-        if ($e instanceof CustomException) {
-            return response()->view('errors.custom', [], 500);
-        }
-
-        return parent::render($request, $e);
+        return parent::render($request, $exception);
     }
     /**
      * Convert an authentication exception into an unauthenticated response.
@@ -68,5 +64,4 @@ class Handler extends ExceptionHandler
         return redirect()->guest('login');
     }
 
-    
 }

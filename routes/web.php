@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function() {
-    return view('welcome')->with('page', 'home');
-});
 
 Route::get('/blog', function() {
     return view('blog')->with('page', 'blog');
@@ -27,8 +24,15 @@ Route::get('/test', function() {
 
 Auth::routes();
 
-Route::get('/home', function() {
-	return Redirect::to('/');
+Route::group(['middleware' => ['emailverify']], function () {
+
+    Route::get('/', function() {
+        return view('welcome')->with('page', 'home');
+    });
+
+    Route::get('/home', function () {
+        return Redirect::to('/');
+    });
 });
 
 //-------------- About ----------------

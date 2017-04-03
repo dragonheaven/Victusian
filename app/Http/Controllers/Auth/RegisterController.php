@@ -114,9 +114,10 @@ class RegisterController extends Controller
         Session::put('useremail', $user->email);
         
         UserVerification::send($user, 'Please verify your email address');
+
+        Auth::login($user);
         
         return redirect($this->redirectPath());
     }
-
 
 }

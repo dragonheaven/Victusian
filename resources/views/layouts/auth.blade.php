@@ -21,6 +21,10 @@
         <link href="/dash_assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
         <link href="/dash_assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="/dash_assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="/dash_assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+
         <link href="/dash_assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
         <link href="/dash_assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL PLUGINS -->
@@ -76,6 +80,7 @@
         @stack('script')
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <!-- END THEME LAYOUT SCRIPTS -->
+        <script src="/js/auth/auth.js" type="text/javascript"></script>
 
         <!-- <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 100%; width: 100%; z-index: -999999; position: fixed;"><img style="position: absolute; margin: 0px; padding: 0px; border: none; width: 100%; height: 100%; max-height: none; max-width: none; z-index: -999999; left: 0px;" src="/dash_assets/pages/media/bg/2.jpg"></div> -->
     </body>
