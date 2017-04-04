@@ -26,9 +26,7 @@ Auth::routes();
 
 Route::group(['middleware' => ['emailverify']], function () {
 
-    Route::get('/', function() {
-        return view('welcome')->with('page', 'home');
-    });
+    Route::get('/', 'MainController@showLandingPage');
 
     Route::get('/home', function () {
         return Redirect::to('/');
@@ -221,9 +219,7 @@ Route::get('/testWebCam', function() {
 
 //-----------  Leaderboard --------------------------//
 
-Route::get('/leaderboard', function () {
-   return view('leaderboard/leaderboard')->with('page', 'leaderboard');
-});
+Route::get('/leaderboard', 'WorkshopsController@showLeaderBoard');
 
 //----------- soulcation -------------------------//
 

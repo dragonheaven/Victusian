@@ -45,4 +45,22 @@ class MainController extends Controller
     	}
     	return $data;
     }
+
+    public function showLandingPage()
+    {
+        $now = getdate();
+        $upcomings = DB::table('event')
+            ->select('id', 'title', 'tagline', 'description', 'img_url')
+            ->limit(4)
+            ->get();
+
+        $topmasters = DB::table('users')
+            ->select('id', 'name', 'image_url')
+            ->orderBy('credits')
+            ->limit(5)
+            ->get();
+
+
+         return view('welcome', ['upcomings' => $upcomings])->with('page', 'welcome');
+    }
 }

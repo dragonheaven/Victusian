@@ -88,6 +88,10 @@ class WorkshopsController extends Controller
     
     public function  showEventDetail($num) {
 
+        if(Auth::guest())
+        {
+            return view('authentication/sign')->with('page', 'login');
+        }
         
         $this->filterArchivedEvents();
         $event = DB::table('event')
@@ -515,5 +519,16 @@ class WorkshopsController extends Controller
         
     }
 
+
+    public function showLeaderBoard()
+    {
+        $leaders = DB::table('users')
+            ->where('actived', 1)
+            ->orderBy('credits', 'desc')
+            ->limit(15)
+            ->get();
+
+        return view('leaderboard/leaderboard', ['leaders' => $leaders])->with('page', 'leaderboard');
+    }
 
 }

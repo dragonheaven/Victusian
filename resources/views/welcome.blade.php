@@ -391,79 +391,32 @@ Home
                     <div class="separator-2"></div>
                     
                     <div class="row grid-space-10">
-                        <div class="col-sm-6 col-md-3">
-                            <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
-                                <div class="overlay-container">
-                                    <img src="/images/portfolio1.jpg" alt="">
-                                    <div class="overlay-to-top">
-                                        <p class="small margin-clear"><em>yoga activity <br> Lorem ipsum dolor sit</em></p>
+
+                        @if(count($upcomings))
+                            @foreach($upcomings as $upcoming)
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
+                                        <div class="overlay-container">
+                                            <img src="/{{$upcoming->img_url}}" alt="">
+                                            <div class="overlay-to-top">
+                                                <p class="small margin-clear"><em> <br> {{$upcoming->tagline}}</em></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="body">
+                                            <h4>{{$upcoming->title}}</h4>
+                                            <div class="separator"></div>
+                                            <p>{{ \Illuminate\Support\Str::limit($upcoming->description, 40) }}</p>
+                                            <a href="{!! route('eventdetail', ['num' => $upcoming->id]) !!}">Read More <i class="pl-5 fa fa-angle-double-right"></i></a>
+                                        </div>
                                     </div>
                                 </div>
+                            @endforeach
 
-                                <div class="body">
-                                    <h3>YogaClass</h3>
-                                    <div class="separator"></div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="{{url('/eventdetail')}}">Read More <i class="pl-5 fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
-                                <div class="overlay-container">
-                                    <img src="/images/economy.jpg" alt="">
-                                    <div class="overlay-to-top">
-                                        <p class="small margin-clear"><em>Get free from Stress<br> Lorem ipsum dolor sit</em></p>
-                                    </div>
-                                </div>
-
-                                <div class="body">
-                                    <h3>New Economy</h3>
-                                    <div class="separator"></div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="{{url('/eventdetail')}}">Read More <i class="pl-5 fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
+                        @endif
                         <div class="clearfix visible-sm"></div>
                         
-                        <div class="col-sm-6 col-md-3">
-                            <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
-                                <div class="overlay-container">
-                                    <img src="/images/portfolio1.png" alt="">
-                                    <div class="overlay-to-top">
-                                        <p class="small margin-clear"><em>Dancing Room <br> Lorem ipsum dolor sit</em></p>
-                                    </div>
-                                </div>
 
-                                <div class="body">
-                                    <h3>Dance</h3>
-                                    <div class="separator"></div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="{{url('/eventdetail')}}">Read More <i class="pl-5 fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
-                                <div class="overlay-container">
-                                    <img src="/images/film.jpg" alt="">
-                                    <div class="overlay-to-top">
-                                        <p class="small margin-clear"><em>Get Film <br> Lorem ipsum dolor sit</em></p>
-                                    </div>
-                                </div>
-
-                                <div class="body">
-                                    <h3>Film</h3>
-                                    <div class="separator"></div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <a href="{{url('/eventdetail')}}">Read More <i class="pl-5 fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>                    
                 </div>
             </section>
