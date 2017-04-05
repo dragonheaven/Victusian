@@ -6,7 +6,7 @@ Create Event
 @section('content')
 <!-- BEGIN THEME GLOBAL STYLES -->
 <link href="/dash_assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
-							
+
 <script src="/dash_assets/global/plugins/plupload/js/plupload.full.min.js" type="text/javascript"></script>
 <script src="/dash_assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
 
@@ -85,7 +85,8 @@ Create Event
 	                                                    <span class="required"> * </span>
 	                                                </label>
 	                                                <div class="col-md-4">
-	                                                    <select class="table-group-action-input form-control" name="type">
+	                                                    <select class="table-group-action-input form-control" name="type" id="type">
+															<option value=""> </option>
 	                                                        <option value="0">One Time</option>
 	                                                        <option value="1">Daily</option>
 	                                                        <option value="2">Weekly</option>
@@ -97,22 +98,22 @@ Create Event
 	                                            </div>	                                            
 
 	                                            <div class="form-group{{ $errors->has('available_from') ? ' has-error' : '' }}">
-	                                                <label class="col-md-3 control-label">Available Date:</label>
+	                                                <label class="col-md-3 control-label">Date:</label>
 	                                                <div class="col-md-9">
 	                                                    <div class="input-group input-large date-picker input-daterange" data-date-format="yyyy-mm-dd">
 	                                                        <input type="text" class="form-control" name="available_from" id='datetimepicker2'>
-	                                                        <span class="input-group-addon"> to </span>
+	                                                        <span class="input-group-addon" name="date-to"> to </span>
 	                                                        <input type="text" class="form-control" name="available_to" id='datetimepicker3'> 
 	                                                    </div>
 	                                                </div>
 	                                            </div>
 
 	                                            <div class="form-group">
-	                                            	<label class="col-md-3 control-label">Timeline</label>
+	                                            	<label class="col-md-3 control-label">Time</label>
 	                                            	<div class="col-md-7">
 	                                            		<div class="input-group input-large date">
 	                                            			<input type="text" class="form-control" name="start-time" id="datetimepicker5">
-	                                            			<span class="input-group-addon"> to </span>
+	                                            			<span class="input-group-addon" name="time-to"> to </span>
 	                                            			<input type="text" class="form-control" name="end-time" id="datetimepicker6">
 	                                            		</div>
 	                                            	</div>
@@ -126,10 +127,82 @@ Create Event
 											                });
 											            });
 											        </script>
-	                                            </div>	                                            
+	                                            </div>
+
+												<style>
+													.weekday {
+														padding: 5px 10px;
+														border: 1px solid #00A8FF;
+													}
+
+													#bringalong {
+														display: none;
+													}
+
+												</style>
+
+												<div class="form-group form-md-line-input" id="monthweek-check-group">
+													<label class="col-md-3 control-label" for="form_control_1">Week of Month</label>
+													<div class="col-md-9">
+														<div class="md-checkbox-inline">
+															<table>
+																<thead>
+																<td class="weekday">
+																	<input type="checkbox" name="monthweek[]" value="0">Week1</label>
+																</td>
+																<td class="weekday">
+																	<input type="checkbox" name="monthweek[]" value="1">Week2</label>
+																</td>
+																<td class="weekday">
+																	<input type="checkbox" name="monthweek[]" value="2">Week3</label>
+																</td>
+																<td class="weekday">
+																	<input type="checkbox" name="monthweek[]" value="3">Week4</label>
+																</td>
+																<td class="weekday">
+																	<input type="checkbox" name="monthweek[]" value="4">Week5</label>
+																</td>
+																</thead>
+															</table>
+														</div>
+													</div>
+												</div>
+
+												<div class="form-group form-md-line-input" id="weekday-check-group">
+													<label class="col-md-3 control-label" for="form_control_1">Weekdays</label>
+													<div class="col-md-9">
+														<div class="md-checkbox-inline">
+															<table>
+																<thead>
+																	<td class="weekday">
+																		<input type="checkbox" name="weekday[]" value="0">Sun</label>
+																	</td>
+																	<td class="weekday">
+																		<input type="checkbox" name="weekday[]" value="1">Mon</label>
+																	</td>
+																	<td class="weekday">
+																		<input type="checkbox" name="weekday[]" value="2">Tue</label>
+																	</td>
+																	<td class="weekday">
+																		<input type="checkbox" name="weekday[]" value="3">Wed</label>
+																	</td>
+																	<td class="weekday">
+																		<input type="checkbox" name="weekday[]" value="4">Thu</label>
+																	</td>
+																	<td class="weekday">
+																		<input type="checkbox" name="weekday[]" value="5">Fri</label>
+																	</td>
+																	<td class="weekday">
+																		<input type="checkbox" name="weekday[]" value="6">Sat</label>
+																	</td>
+																</thead>
+															</table>
+														</div>
+													</div>
+												</div>
 	                                            
 	                                            <div class="form-group">
-	                                                <label class="col-md-3 control-label">Level Required:</label>
+	                                                <label class="col-md-3 control-label">Event Level:</label>
 	                                                <div class="col-md-9">
 	                                                    <select class="table-group-action-input form-control input-medium" name="level">
 	                                                        <option value="0">Beginner</option>
@@ -175,7 +248,7 @@ Create Event
 	                                            </div>
 	                                                                          
 											</div>
-											<div class="col-md-6">
+											<div class="col-md-6 category">
 												<div class="form-group has-feedback{{ $errors->has('category') ? ' has-error' : '' }}">
 	                                                <label class="col-md-3 control-label">Categories:
 	                                                    <span class="required"> * </span>
@@ -203,10 +276,8 @@ Create Event
 	                                                            <label>
 	                                                                <input type="checkbox" name="category[]" value="5">Film</label>                                                                    
 	                                                        </li>
-	                                                        
-	                                                        
+
 	                                                    </ul>
-	                                                    <span class="help-block"> select one or more categories </span>
 	                                                </div>
 	                                                <div class="col-md-4">
 	                                                	<ul class="list-unstyled">
@@ -226,9 +297,28 @@ Create Event
 	                                                            <label>
 	                                                                <input type="checkbox" name="category[]" value="9">Fitness</label>                                                                    
 	                                                        </li>
+															@if(session('userrole') == 2)
+																<li>
+																	<label>
+																		<input type="checkbox" name="category[]" id="trip-checkbox" value="10">Trip</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="category[]" id="travel-checkbox" value="11">Travel</label>
+																</li>
+															@endif
 	                                                	</ul>
 	                                                </div>
 	                                            </div>
+
+												<div class="form-group has-feedback" id="bringalong">
+													<label class="col-md-3 control-label">What do I need to bring along :
+														<span class="required"> * </span>
+													</label>
+													<div class="col-md-9">
+														<textarea class="form-control" name="bringalong" rows="3" value="{{old('bringalong')}}"></textarea>
+													</div>
+												</div>
 
 	                                            <div class="form-group has-feedback{{ $errors->has('description') ? ' has-error' : '' }}">
 	                                                <label class="col-md-3 control-label">Description:
@@ -285,37 +375,5 @@ Create Event
 		</div>
 	</div>
 </section>
-<script type="text/javascript">
-$(function () {
-    $('#btnUpload').on("click", function() {
-        file = $('#image-upload')[0].files[0];
-        var formdata = new FormData();
-        var reader = new FileReader();
-        reader.onloadend = function(e) {
-            $('#btnUpload').val('Wait...');
-            formdata.append("_token", $('meta[name="csrf-token"]').attr("content"));
-            formdata.append("image", file);
-
-            $.ajax({
-                url: $("#image_upload_url").val(),
-                type: 'POST',
-                data: formdata,
-                processData: false,
-                contentType: false,
-                success: function(data) {
-                    if (data == 'fail') {
-                        alert("Failed to upload image.");
-                        $('#btnUpload').val('Failed Upload!');
-                    } else {
-                        $('input[name="image"]').val(data);
-                        $('#btnUpload').val('Success!');
-                        $('#btnUpload').addClass('btn-success');
-                    }
-                }
-            });
-        };
-        reader.readAsDataURL(file);
-    });
-});
-</script>
+<script src="/js/event/createEvent.js" type="text/javascript"></script>
 @endsection

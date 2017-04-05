@@ -50,7 +50,6 @@ class EventController extends Controller
         //get category information
         $category = '';
         if (!empty($_POST['category'])) {
-            $i = 0;
             foreach ($_POST['category'] as $value) {
                 # code...
                 $category = $category.$value.', ';
@@ -67,6 +66,27 @@ class EventController extends Controller
         //date_default_timezone_set('Austria/Vienna');
         $create_date = date('y-m-d');
 
+        //weeks of month
+        $weeks_of_month = NULL;
+        if(!empty($_POST['monthweek']))
+        {
+            $weeks_of_month = '';
+            foreach ($_POST['monthweek'] as $value) {
+                # code...
+                $weeks_of_month = $weeks_of_month.$value.', ';
+            }
+        }
+
+        //days of week
+        $days_of_week = NULL;
+        if(!empty($_POST['weekday']))
+        {
+            $days_of_week = '';
+            foreach ($_POST['weekday'] as $value) {
+                $days_of_week = $days_of_week.$value.', ';
+            }
+        }
+
 		if (DB::table('event')->insert([
             'title' => $input['title'],
             'description' => $input['description'],
@@ -80,6 +100,11 @@ class EventController extends Controller
             'startdate' => $input['available_from'],
             'expiredate' => $input['available_to'],
             'createdate' => $create_date,
+            'starttime' => $input['start-time'],
+            'endtime' => $input['end-time'],
+            'weeks_in_month' => $weeks_of_month,
+            'days_in_week' => $days_of_week,
+            'bringitems' => $input['bringalong'],
             'img_url' => $input['image'],
             'rate' => 0,
             'price' => $input['price'],
