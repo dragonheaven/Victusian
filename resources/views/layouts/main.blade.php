@@ -164,10 +164,10 @@
 											<li class="dropdown">
 												<a href="{{url('/soulcation')}}" class="dropdown-toggle" data-toggle="dropdown">Soulcation & Fun</a>
 												<ul class="dropdown-menu">
-													<li><a href="">Recreational trip</a></li>
-													<li><a href="">Sport trip</a></li>
-													<li><a href="">Yoga & Meditation travel</a></li>
-													<li><a href="">Soulcation travel</a></li>
+													<li class="<?php if ($page == "workshops_recreational_trip") echo 'active'; ?>"><a href="{!! route('workshop', ['mode'=>'recreational_trip', 'num'=>'10']) !!}">Recreational Trip</a></li>
+													<li class="<?php if ($page == "workshops_sport_trip") echo 'active'; ?>"><a href="{!! route('workshop', ['mode'=>'sport_trip', 'num'=>'11']) !!}">Sport Trip</a></li>
+													<li class="<?php if ($page == "workshops_yoga_travel") echo 'active'; ?>"><a href="{!! route('workshop', ['mode'=>'yoga_travel', 'num'=>'12']) !!}">Yoga & Meditational Travel</a></li>
+													<li class="<?php if ($page == "workshops_soulcation_travel") echo 'active'; ?>"><a href="{!! route('workshop', ['mode'=>'soulcation_travel', 'num'=>'13']) !!}">Soulcation Travel</a></li>
 												</ul>
 											</li>
 											<!-- submenu end -->
@@ -189,7 +189,8 @@
 												<a class="dropdown-toggle" data-toggle="dropdown">Event</a>
 												<ul class="dropdown-menu">
 													<li class="<?php if ($page == "event_create") echo 'active'; ?>"><a href="{{url('/event/createevent')}}">Create New Event</a></li>
-													<li class="<?php if ($page == "event_myevent") echo 'active'; ?>"><a href="{{url('/event/myevent')}}">My Events</a></li>															
+    												<li class="<?php if ($page == "event_travel_create") echo 'active'; ?>"><a href="{{url('/event/createtravel')}}">Create New Travel Event</a></li>
+    												<li class="<?php if ($page == "event_myevent") echo 'active'; ?>"><a href="{{url('/event/myevent')}}">My Events</a></li>
 												</ul>
 											</li>
 											@endif

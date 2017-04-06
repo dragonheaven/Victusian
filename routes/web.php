@@ -162,6 +162,9 @@ Route::group(['prefix' => 'event'], function() {
         return view('event/createEvent')->with('page', 'event_create');
     });
 
+    Route::get('createtravel', function() {
+        return view('event/createTravel')->with('page', 'event_travel_create');
+    });
 
     Route::post('create', 'EventController@create');
 

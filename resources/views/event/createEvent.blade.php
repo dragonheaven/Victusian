@@ -14,9 +14,6 @@ Create Event
 <script src="/dash_assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 
 
-
-
-
 <section class="main-container">
 	<div class="container">
 		<div class="row" style="background: rgba(188, 219, 241, 0.58);padding: 40px;">
@@ -133,10 +130,6 @@ Create Event
 													.weekday {
 														padding: 5px 10px;
 														border: 1px solid #00A8FF;
-													}
-
-													#bringalong {
-														display: none;
 													}
 
 												</style>
@@ -297,28 +290,9 @@ Create Event
 	                                                            <label>
 	                                                                <input type="checkbox" name="category[]" value="9">Fitness</label>                                                                    
 	                                                        </li>
-															@if(session('userrole') == 2)
-																<li>
-																	<label>
-																		<input type="checkbox" name="category[]" id="trip-checkbox" value="10">Trip</label>
-																</li>
-																<li>
-																	<label>
-																		<input type="checkbox" name="category[]" id="travel-checkbox" value="11">Travel</label>
-																</li>
-															@endif
 	                                                	</ul>
 	                                                </div>
 	                                            </div>
-
-												<div class="form-group has-feedback" id="bringalong">
-													<label class="col-md-3 control-label">What do I need to bring along :
-														<span class="required"> * </span>
-													</label>
-													<div class="col-md-9">
-														<textarea class="form-control" name="bringalong" rows="3" value="{{old('bringalong')}}"></textarea>
-													</div>
-												</div>
 
 	                                            <div class="form-group has-feedback{{ $errors->has('description') ? ' has-error' : '' }}">
 	                                                <label class="col-md-3 control-label">Description:

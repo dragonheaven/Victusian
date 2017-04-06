@@ -87,6 +87,19 @@ class EventController extends Controller
             }
         }
 
+        //what I need to bring along
+        $bringitems = NULL;
+        if(isset($_POST['bringalong']))
+        {
+            $bringitems = $_POST['bringalong'];
+        }
+
+        $expiredate = NULL;
+        if(isset($_POST['expiredate']))
+        {
+            $expiredate = $input['available_to'];
+        }
+
 		if (DB::table('event')->insert([
             'title' => $input['title'],
             'description' => $input['description'],
@@ -98,13 +111,13 @@ class EventController extends Controller
             'trialable' => $trial,
             'createdby' => Session::get('userid'),
             'startdate' => $input['available_from'],
-            'expiredate' => $input['available_to'],
+            'expiredate'=> $expiredate,
             'createdate' => $create_date,
             'starttime' => $input['start-time'],
             'endtime' => $input['end-time'],
             'weeks_in_month' => $weeks_of_month,
             'days_in_week' => $days_of_week,
-            'bringitems' => $input['bringalong'],
+            'bringitems' => $bringitems,
             'img_url' => $input['image'],
             'rate' => 0,
             'price' => $input['price'],
@@ -155,18 +168,7 @@ class EventController extends Controller
                                      'nClosed' => $nClosed])->with('page','event_myevent');
     }
 
-    public function showAllEvents()
-    {
-        $this->filterArchivedEvents();
 
-        $events = DB::table('event')
-        ->join('users', 'users.id', '=', 'event.createdby')
-        ->where('state', '0')
-        ->select('event.*', 'users.displayName', 'users.image_url')
-        ->get();
-      
-        return view('dashboard/dashboard', ['events' => $events])->with('page','dashboard');
-    }
 
     public function dropEvent() 
     {

@@ -132,14 +132,12 @@ class WorkshopsController extends Controller
             $user_rank = DB::table('masters')
                          ->where('userid', Session::get('userid'))
                          ->select('rank');
-        if($user_rank >= $level_required) $canjoin = true;
 
 
         return view('workshops/eventdetail', [
             'event' => $event[0],
             'users' => $users,
             'isjoined' => $isjoined,
-            'canjoin' => $canjoin,
             ])->with('page', 'workshops_eventdetail');
     }
 

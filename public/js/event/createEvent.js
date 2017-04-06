@@ -47,23 +47,6 @@ $(function () {
 
     });
 
-    $('input[type="checkbox"]').on('click', function() {
-        //when choose travel/trip of category, show "What I need to bring along"
-        if($('#travel-checkbox').prop("checked") == true || $('#trip-checkbox').prop("checked") == true)
-        {
-            $('#bringalong').show();
-            $('.category input[type="checkbox"]').parent().css('display', 'none');
-            $('#travel-checkbox').parent().show();
-            $('#trip-checkbox').parent().show();
-        }
-
-        //when choose others, hide "what I need to bring along"
-        if($('#travel-checkbox').prop("checked") == false && $('#trip-checkbox').prop("checked") == false)
-        {
-            $('#bringalong').hide();
-            $('.category input[type="checkbox"]').parent().css('display', 'inline-block');
-        }
-    })
 
     $('body').on('change', '#type', function() {
         switch($('#type').val()) {
