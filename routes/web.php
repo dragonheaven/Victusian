@@ -16,11 +16,6 @@ Route::get('/blog', function() {
     return view('blog')->with('page', 'blog');
 });
 
-Route::get('/test', function() {
-    return view('test');
-});
-
-
 
 Auth::routes();
 
@@ -104,6 +99,15 @@ Route::group(['prefix' => 'profile'], function() {
 
     Route::post('createLegionProfile', 'AccountController@createLegionProfile');
 });
+
+Route::get('/testpage', 'AccountController@testpage');
+
+Route::get('/testremove/{num}',[
+    'uses' => 'AccountController@testremove',
+    'as' => 'testremove'
+]);
+
+Route::get('/testremoveall', 'AccountController@testremoveall');
 
 
 

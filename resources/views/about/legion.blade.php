@@ -70,36 +70,4 @@ Legionaries
 
                         <h5>How does it work?</h5>
                         <p>Revenue sharing for real work, for the purpose of keeping up the communty code and community vibe.  
-                        - accomplished legion members are co-creating personal teachings into admissible fees and packages, so can you potentially. These are sold with equal revenue sharing. 
-                        - organisation of larger events including Victus Parties in your area.</p>
-
-                        <h5>What's the work?</h5>
-                        <p>The job is to work, grow and create towards a network of likeminded people within a community that shares the value of self mastery, hence also teaching others. This means that such teachers of any given art of self growth or the masters as we call them, shall receive guidance material from you, which is taken from the victus archives. The masters can choose you or any another legion member in your area. Your job is to maintain the quality standards given by Victus in the physical activity and hence make sure that all guidelines are followed. You may approve or disapprove any master when they sign up.
-                        You will be required to scout for locations like gyms, rooms and other event locations. 
-                        You will be required to follow up with any master under your guidance and legion supervisor.
-                        You will be required in person to get to know your master apprentice, assist them with set up. This usually takes one hour maximum. Further, for any assistance required that are not technical and in relevance to guidelines or the code.    
-                        You will be assessed on your masters ratings, reviews from students and quality of your work in general.</p>
-
-                        <h5>Legionaries characteristics </h5>
-                        <p>Humble, friendly, honest, wise, easily connects with people, purpose driven, smart, service and duty orientated, disciplined and persistent.</p>
-
-                        <h5>Further</h5>
-                        <p>Spiritually awakened or open minded, Intuitive. Deeper understanding of life balanced with real life stability.</p>
-
-                        <h5>Legionaries skills required</h5>
-                        <p>Organisational skills like event planning, relationship building, business development.</p>
-
-                        <h5>So what is it then?</h5>
-                        <p>It is a business within a business with no investments other than your work and genuine drive to create the best community within the community. 
-                        This business only works with love, therefore it is more than just a business.</p>
-
-                        <div class="separator-2"></div>
-                        <a href="{{url('/auth/signup')}}" class="btn btn-default-transparent btn-lg btn-hvr hvr-sweep-to-right">Become a Legion</a>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>  
-        <!-- start end-->
-@endsection
+                        - accomplished legion members are co-creating personal teachings into admissible f
